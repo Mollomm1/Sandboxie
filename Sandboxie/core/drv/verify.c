@@ -129,7 +129,7 @@ NTSTATUS KphHashFile(
     _Out_ PULONG HashSize
     )
 {
-    
+    NTSTATUS status;
     MY_HASH_OBJ hashObj;
     ULONG querySize;
     OBJECT_ATTRIBUTES objectAttributes;
