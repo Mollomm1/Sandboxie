@@ -129,7 +129,7 @@ NTSTATUS KphHashFile(
     _Out_ PULONG HashSize
     )
 {
-    NTSTATUS status;
+    
     MY_HASH_OBJ hashObj;
     ULONG querySize;
     OBJECT_ATTRIBUTES objectAttributes;
@@ -222,6 +222,7 @@ NTSTATUS KphVerifySignature(
     _In_ ULONG SignatureSize
     )
 {
+    NTSTATUS status;
     BCRYPT_ALG_HANDLE signAlgHandle = NULL;
     BCRYPT_KEY_HANDLE keyHandle = NULL;
     PVOID hash = NULL;
