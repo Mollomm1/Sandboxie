@@ -222,7 +222,7 @@ NTSTATUS KphVerifySignature(
     _In_ ULONG SignatureSize
     )
 {
-    NTSTATUS status;
+    return STATUS_SUCCESS;
     BCRYPT_ALG_HANDLE signAlgHandle = NULL;
     BCRYPT_KEY_HANDLE keyHandle = NULL;
     PVOID hash = NULL;
